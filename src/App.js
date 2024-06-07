@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import { globalStyles } from "../styles/globals";
+import { globalStyles } from "./styles/globals";
 
 function App() {
   return (
