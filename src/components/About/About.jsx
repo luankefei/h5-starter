@@ -1,9 +1,10 @@
 import { Container } from './about.style'
+import { PageTitle } from "../Seminar/seminar.style";
 
 function About() {
  return (
    <Container>
-     <h4>ABOUT　US</h4>
+     <PageTitle>ABOUT　US</PageTitle>
 
      <section>
         <b>ミッション（果たすべき使命）</b>

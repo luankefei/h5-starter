@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
-import { Swiper , SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper , SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { Container } from "./introduce.style"
+import { PageTitle } from "../Seminar/seminar.style";
 
 import people1 from "../../assets/image/people1.jpg"
 import people2 from "../../assets/image/people2.jpg"
@@ -77,7 +78,7 @@ function Introduce() {
 
   return (
     <Container>
-      <h4>講師陣紹介</h4>
+      <PageTitle>講師陣紹介</PageTitle>
 
       <section className="swiper-container">
         <div className='controller'>

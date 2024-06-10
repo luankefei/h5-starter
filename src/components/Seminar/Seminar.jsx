@@ -1,17 +1,10 @@
-import React, { useState } from "react";
-import { Container, PageTitle, Content } from "./seminar.style";
-import lace1 from "../../assets/image/lace1.png";
-import img14 from "../../assets/image/image14.png";
+import { Container, Title, Content } from "./seminar.style";
 
 function Seminar() {
-  const [isShow, setStatus] = useState(false);
 
-  const handleChange = () => {
-    setStatus(true);
-  };
   return (
     <Container>
-      <PageTitle>開催中のセミナー</PageTitle>
+      <Title>開催中のセミナー</Title>
 
       <Content>
         <p>

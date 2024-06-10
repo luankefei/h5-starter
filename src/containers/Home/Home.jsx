@@ -3,6 +3,8 @@ import About from "../../components/About/About";
 import Information from "../../components/Information/Information";
 import Introduce from "../../components/Introduce/Introduce";
 import Seminar from "../../components/Seminar/Seminar";
+import Parkway from "../../components/Parkway/Parkway";
+import ToForm from "../../components/ToForm/ToForm";
 
 import { Container } from "./home.style";
 
@@ -11,10 +13,6 @@ import image1 from "../../assets/image/image1.png";
 import image2 from "../../assets/image/image2.png";
 import image3 from "../../assets/image/image3.png";
 import image4 from "../../assets/image/image4.png";
-
-const onNavClick = (index) => () => {
-  console.log("kjkkjkf", index);
-};
 
 const HomeComponent = () => (
   <div className="home">
@@ -84,9 +82,10 @@ const Home = () => {
         <div id="introduce" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Introduce />
         </div>
-        <div id="seminar" style={{ marginTop: "-66px", paddingTop: "66px" }}>
-          {/* <div style={{ height: "300px" }}>Section 4 seminar</div> */}
+        <Parkway />
+        <ToForm />
 
+        <div id="seminar" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Seminar />
         </div>
         <div id="reason" style={{ marginTop: "-66px", paddingTop: "66px" }}>
@@ -96,6 +95,7 @@ const Home = () => {
           <div style={{ height: "300px" }}>Section 6</div>
         </div>
       </main>
+
       <div className="to-top">
         <button onClick={scrollToTop}>
           <img src={sortUpIcon} />
