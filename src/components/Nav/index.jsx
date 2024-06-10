@@ -8,42 +8,42 @@ import menuIcon from "../../assets/image/menu@2x.png";
 const menus = [
   {
     id: "about",
-    href: "about",
+    href: "#about",
     title: "ABOUT　US",
   },
   {
     id: "information",
-    href: "information",
+    href: "#information",
     title: "メッセージ",
   },
   {
     id: "introduce",
-    href: "introduce",
+    href: "#introduce",
     title: "講師陣紹介",
   },
   {
     id: "seminar",
-    href: "seminar",
+    href: "#seminar",
     title: "開催中のセミナー",
   },
   {
     id: "reason",
-    href: "reason",
+    href: "#reason",
     title: "なぜ勉強が必要か",
   },
   {
     id: "your-voice",
-    href: "voice",
+    href: "#voice",
     title: "お客様の声",
   },
   {
     id: "video",
-    href: "video",
+    href: "#video",
     title: "投資動画の受け取り",
   },
   {
     id: "FAQ",
-    href: "FAQ",
+    href: "#FAQ",
     title: "よくある質問",
   },
 ];
@@ -77,7 +77,7 @@ function Navigation({ swiper }) {
           >
             <List className="nav-list">
               {menus.map((menu, index) => (
-                <a href={`#${menu.id}`} key={menu.id}>
+                <a href={menu.href} key={menu.id}>
                   <List.Item
                     key={menu.id}
                     arrow={false}

@@ -1,15 +1,8 @@
-import React, { useState } from "react";
 import { Container, PageTitle, GrayContent, Content } from "./voice.style";
 import image1 from "../../assets/image/voice_image1.png";
 import image2 from "../../assets/image/voice_image2.png";
-// import img14 from "../../assets/image/image14.png";
 
 function Seminar() {
-  const [isShow, setStatus] = useState(false);
-
-  const handleChange = () => {
-    setStatus(true);
-  };
   return (
     <Container>
       <PageTitle>なぜ勉強が必要か</PageTitle>
