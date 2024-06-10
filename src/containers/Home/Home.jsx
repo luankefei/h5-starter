@@ -1,14 +1,6 @@
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import {
-  // Navigation,
-  Pagination,
-  // Scrollbar,
-  // A11y,
-  // Autoplay,
-} from "swiper/modules";
-
-// import { Element, Link, animateScroll as scroll } from "react-scroll";
+import { Pagination } from "swiper/modules";
 
 import Nav from "../../components/Nav/index";
 import About from "../../components/About/About";
@@ -28,40 +20,32 @@ import "swiper/css/scrollbar";
 import { useState } from "react";
 
 const Home = () => {
-  // const swiper = useSwiper();
   const [swiper, setSwiper] = useState(null);
-  // const scrollToTop = () => {
-  //   console.log(111);
-  //   scroll.scrollToTop();
-  // };
 
   const scrollToTop = () => {
     console.log("swiper", swiper);
     swiper.slideTo(0);
   };
 
+  const onNavClick = (index) => () => {
+    console.log("kjkkjkf", index);
+    swiper.slideTo(index);
+  };
+
   return (
     <Container>
-      <Nav></Nav>
+      <Nav swiper={swiper}></Nav>
 
       <main className="main">
         <Swiper
           modules={[Pagination]}
-          // navigation
           direction={"vertical"}
-          // touchRatio={0.1}
           autoHeight={true}
           pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true, clickable: true }}
           onSwiper={(swiper) => {
             setSwiper(swiper);
           }}
           onSlideChange={() => console.log("slide change")}
-          // autoplay={{
-          //   delay: 2000,
-          //   disableOnInteraction: false,
-          // }}
-          // autoplayDisableOnInteraction={false}
         >
           <SwiperSlide>
             <div className="home">
@@ -80,22 +64,22 @@ const Home = () => {
 
               <section className="section">
                 <ul className="image-list">
-                  <li>
+                  <li onClick={onNavClick(0)}>
                     {/* <Link to="about" smooth={true} offset={-66} duration={500}> */}
                     <img src={image1} />
                     {/* </Link> */}
                   </li>
-                  <li>
+                  <li onClick={onNavClick(1)}>
                     {/* <Link to="about" smooth={true} offset={-66} duration={500}> */}
                     <img src={image2} />
                     {/* </Link> */}
                   </li>
-                  <li>
+                  <li onClick={onNavClick(2)}>
                     {/* <Link to="about" smooth={true} offset={-66} duration={500}> */}
                     <img src={image3} />
                     {/* </Link> */}
                   </li>
-                  <li>
+                  <li onClick={onNavClick(3)}>
                     {/* <Link to="about" smooth={true} offset={-66} duration={500}> */}
                     <img src={image4} />
                     {/* </Link> */}

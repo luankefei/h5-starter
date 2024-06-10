@@ -11,7 +11,8 @@ const Container = styled.div`
   // overflow: hidden;
 
   .main {
-    margin-top: 66px;
+    padding-top: 66px;
+    // margin-top: 66px;
     // overflow: hidden;
   }
 
