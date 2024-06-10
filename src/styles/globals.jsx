@@ -39,7 +39,7 @@ export const globalStyles = (
         overflow: hidden;
         margin: 0;
         font-size: 28px;
-        background-color: #fff;
+        background-color: #F4F4F4;
       }
 
       .webgl {
@@ -134,7 +134,8 @@ export const globalStyles = (
         cursor: pointer;
       }
 
-      .nav-popup-body,.nav-popup {
+      .nav-popup-body,
+      .nav-popup {
         top: 66px;
       }
 

@@ -64,7 +64,7 @@ const Container = styled.div`
 		}
 
 		.long-content {
-			height: 1130px;
+			height: 1125px;
 			background-image: url(${letterBg2}), url(${letterBg1});
 			background-position: top left, bottom right;
 			background-repeat: no-repeat;
@@ -92,7 +92,7 @@ const Container = styled.div`
 			}
 
 			.long-content {
-				height: 1072px;
+				height: 1050px;
 			}
 		}
 	}

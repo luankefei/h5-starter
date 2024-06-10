@@ -52,10 +52,7 @@ function Navigation({ swiper }) {
   const [visible, setVisible] = useState(false);
   // const swiper = useSwiper();
 
-  const onNavClick = (index) => () => {
-    console.log("kjkkjkf", index);
-    swiper.slideTo(index);
-  };
+  // const onNavClick = (id) => () => {};
 
   return (
     <>
@@ -80,28 +77,21 @@ function Navigation({ swiper }) {
           >
             <List className="nav-list">
               {menus.map((menu, index) => (
-                // <Link
-                //   key={menu.id}
-                //   offset={-66}
-                //   to={menu.href}
-                //   smooth={true}
-                //   duration={500}
-                // >
-                <List.Item
-                  key={menu.id}
-                  arrow={false}
-                  style={{
-                    fontSize: "1rem",
-                    lineHeight: 2.2,
-                    color: "#545454",
-                    fontWeight: 700,
-                    textAlign: "center",
-                  }}
-                  onClick={onNavClick(index)}
-                >
-                  {menu.title}
-                </List.Item>
-                // </Link>
+                <a href={`#${menu.id}`} key={menu.id}>
+                  <List.Item
+                    key={menu.id}
+                    arrow={false}
+                    style={{
+                      fontSize: "1rem",
+                      lineHeight: 2.2,
+                      color: "#545454",
+                      fontWeight: 700,
+                      textAlign: "center",
+                    }}
+                  >
+                    {menu.title}
+                  </List.Item>
+                </a>
               ))}
             </List>
           </Popup>
