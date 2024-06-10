@@ -3,6 +3,7 @@ import About from "../../components/About/About";
 import Information from "../../components/Information/Information";
 import Introduce from "../../components/Introduce/Introduce";
 import Seminar from "../../components/Seminar/Seminar";
+import Reason from "../../components/Reason/Reason";
 
 import { Container } from "./home.style";
 
@@ -83,6 +84,7 @@ const Home = () => {
         </div>
         <div id="reason" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <div style={{ height: "300px" }}>Section 5</div>
+          <Reason />
         </div>
         <div id="voice" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <div style={{ height: "300px" }}>Section 6</div>
