@@ -4,6 +4,7 @@ import Information from "../../components/Information/Information";
 import Introduce from "../../components/Introduce/Introduce";
 import Seminar from "../../components/Seminar/Seminar";
 import Reason from "../../components/Reason/Reason";
+import Voice from "../../components/Voice/Voice";
 
 import { Container } from "./home.style";
 
@@ -35,22 +36,22 @@ const HomeComponent = () => (
     <section className="section">
       <ul className="image-list">
         <li>
-          <a href='#about'>
+          <a href="#about">
             <img src={image1} />
           </a>
         </li>
         <li>
-          <a href='#about'>
+          <a href="#about">
             <img src={image2} />
           </a>
         </li>
         <li>
-          <a href='#introduce'>
+          <a href="#introduce">
             <img src={image3} />
           </a>
         </li>
         <li>
-          <a href='#about'>
+          <a href="#about">
             <img src={image4} />
           </a>
         </li>
@@ -96,6 +97,7 @@ const Home = () => {
         </div>
         <div id="voice" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <div style={{ height: "300px" }}>Section 6</div>
+          <Voice />
         </div>
       </main>
       <div className="to-top">
