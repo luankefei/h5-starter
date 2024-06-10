@@ -156,6 +156,16 @@ export const globalStyles = (
       .adm-list-item {
         background: none;
       }
+
+      .nav-list {
+        a {
+          text-decoration: none;
+        }
+
+        .adm-list-item {
+          padding: 0;
+        }
+      }
     `}
   ></Global>
 );

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import lace1 from "../../assets/image/lace1.png";
 
 const Container = styled.div`
-	margin-top: 3.6rem;
+	margin-top: 1.5rem;
 
 	h4 {
 		width: 75%;
