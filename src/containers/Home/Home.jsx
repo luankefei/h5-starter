@@ -3,6 +3,7 @@ import { Element, Link, animateScroll as scroll } from 'react-scroll'
 import Navigation from '../../components/Nav/index'
 import About from '../../components/About/About'
 import Infromation from '../../components/Information/Information'
+import Introduce from '../../components/Introduce/Introduce'
 
 import { Container } from './home.style'
 import sortUpIcon from '../../assets/image/sort-up.png'
@@ -56,9 +57,7 @@ const Home = () => {
 
         <Element name="about"><About/></Element>
         <Element name="information"><Infromation/></Element>
-        <Element name="introduce">
-          <div style={{ height: '300px'}}>Section 3</div>
-        </Element>
+        <Element name="introduce"><Introduce/></Element>
         <Element name="seminar">
           <div style={{ height: '300px'}}>Section 4</div>
         </Element>
