@@ -134,7 +134,8 @@ export const globalStyles = (
         cursor: pointer;
       }
 
-      .nav-popup-body,.nav-popup {
+      .nav-popup-body,
+      .nav-popup {
         top: 66px;
       }
 

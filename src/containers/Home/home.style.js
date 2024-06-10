@@ -7,12 +7,12 @@ const Container = styled.div`
   height: 100vh;
   background: url(${bg}) no-repeat;
   background-size: cover;
-  // overflow-y: auto;
+  overflow-y: auto;
   // overflow: hidden;
 
   .main {
-    padding-top: 66px;
-    // margin-top: 66px;
+    // padding-top: 66px;
+    margin-top: 66px;
     // overflow: hidden;
   }
 
