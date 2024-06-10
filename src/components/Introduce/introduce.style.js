@@ -20,6 +20,10 @@ const Container = styled.div`
 		box-sizing: border-box;
 		padding-top: 10px;
 	}
+
+	.swiper-container {
+		height: 700px;
+	}
 `;
 
 export { Container };
