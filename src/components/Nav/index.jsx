@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Popup, List } from "antd-mobile";
 
 import { NavContainer } from "./nav.style";

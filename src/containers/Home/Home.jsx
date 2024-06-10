@@ -7,7 +7,8 @@ import Parkway from "../../components/Parkway/Parkway";
 import ToForm from "../../components/ToForm/ToForm";
 import Reason from "../../components/Reason/Reason";
 import Voice from "../../components/Voice/Voice";
-import CustomerVoice from "../../components/CustomerVoice/CustomerVoice"
+import CustomerVoice from "../../components/CustomerVoice/CustomerVoice";
+import Form from "../../components/Form/Form";
 
 import { Container } from "./home.style";
 
@@ -50,7 +51,7 @@ const HomeComponent = () => (
           </a>
         </li>
         <li>
-          <a href="#about">
+          <a href="#form">
             <img src={image4} />
           </a>
         </li>
@@ -97,9 +98,13 @@ const Home = () => {
         <div id="reason" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Voice />
         </div>
-        
+
         <div id="voice" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <CustomerVoice />
+        </div>
+
+        <div id="form" style={{ marginTop: "-66px", paddingTop: "66px" }}>
+          <Form />
         </div>
       </main>
 
