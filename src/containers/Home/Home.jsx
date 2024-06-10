@@ -2,7 +2,10 @@ import Nav from "../../components/Nav/index";
 import About from "../../components/About/About";
 import Information from "../../components/Information/Information";
 import Introduce from "../../components/Introduce/Introduce";
+import Seminar from "../../components/Seminar/Seminar";
+
 import { Container } from "./home.style";
+
 import sortUpIcon from "../../assets/image/sort-up.png";
 import image1 from "../../assets/image/image1.png";
 import image2 from "../../assets/image/image2.png";
@@ -82,7 +85,9 @@ const Home = () => {
           <Introduce />
         </div>
         <div id="seminar" style={{ marginTop: "-66px", paddingTop: "66px" }}>
-          <div style={{ height: "300px" }}>Section 4</div>
+          {/* <div style={{ height: "300px" }}>Section 4 seminar</div> */}
+
+          <Seminar />
         </div>
         <div id="reason" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <div style={{ height: "300px" }}>Section 5</div>
