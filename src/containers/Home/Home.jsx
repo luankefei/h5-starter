@@ -30,17 +30,25 @@ const HomeComponent = () => (
 
     <section className="section">
       <ul className="image-list">
-        <li onClick={onNavClick(0)}>
-          <img src={image1} />
+        <li>
+          <a href='#about'>
+            <img src={image1} />
+          </a>
         </li>
-        <li onClick={onNavClick(1)}>
-          <img src={image2} />
+        <li>
+          <a href='#about'>
+            <img src={image2} />
+          </a>
         </li>
-        <li onClick={onNavClick(2)}>
-          <img src={image3} />
+        <li>
+          <a href='#introduce'>
+            <img src={image3} />
+          </a>
         </li>
-        <li onClick={onNavClick(3)}>
-          <img src={image4} />
+        <li>
+          <a href='#about'>
+            <img src={image4} />
+          </a>
         </li>
       </ul>
     </section>

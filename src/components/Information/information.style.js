@@ -3,7 +3,7 @@ import letterBg1 from "../../assets/image/letter-bg1.png";
 import letterBg2 from "../../assets/image/letter-bg2.png";
 
 const Container = styled.div`
-	margin-top: 60px;
+	margin-top: 30px;
 
 	.img-box {
 		margin: 0 1.7rem;
