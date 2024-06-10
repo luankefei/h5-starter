@@ -1,19 +1,19 @@
 import { css, Global } from "@emotion/react";
 
+import logo from "../assets/image/logo.png";
 const prefix = "https://d2dfipunm8t5y9.cloudfront.net/ingroup-official";
 
 export const globalStyles = (
   <Global
     styles={css`
       @font-face {
-        font-family: Infra;
+        font-family: Raleway, Infra;
         font-weight: 400;
         src: url(/font/InfraRegular.otf);
-        /* src: url(/font/InfraLight.otf); */
       }
 
       @font-face {
-        font-family: Infra;
+        font-family: Raleway, Infra;
         font-weight: 500;
         src: url(/font/InfraMedium.otf);
       }
@@ -26,26 +26,20 @@ export const globalStyles = (
       }
 
       html {
-        font-size: 28px;
+        font-size: 13px;
         overscroll-behavior-x: none;
         overflow: hidden;
       }
 
       body {
-        /* background: #eff1ef; */
         background: #f5f5f5;
-        /* background: rgb(239, 241, 239); */
-        /* background: rgb(245, 245, 245); */
-        font-family: Infra, Arial, Helvetica, sans-serif;
+        font-family: Raleway, Infra, Arial, Helvetica, sans-serif;
         color: #111111;
         transition: background 0.5s;
         overflow: hidden;
         margin: 0;
         font-size: 28px;
-      }
-
-      body.dark {
-        background-color: #a7a7a7;
+        background-color: #fff;
       }
 
       .webgl {
@@ -87,7 +81,6 @@ export const globalStyles = (
         opacity: 1;
         transform: scale(0.7);
         z-index: 200;
-        /* display: none; */
       }
 
       .loading-content {
@@ -96,7 +89,6 @@ export const globalStyles = (
         left: 60px;
         text-align: center;
         font-size: 0.85714286rem;
-        /* color: #ccd2cc; */
 
         &::after {
           animation: loadingDot 2s 0s steps(1) forwards;
@@ -128,7 +120,6 @@ export const globalStyles = (
         width: 2160px;
         height: 1350px;
         animation: loadingEnd 0.8s 0s steps(1) forwards;
-        /* animation: loadingEnd 3s 0s steps(1) forwards; */
         animation-play-state: paused;
         opacity: 0;
         position: absolute;
@@ -141,6 +132,28 @@ export const globalStyles = (
         height: 260px;
         position: absolute;
         cursor: pointer;
+      }
+
+      .nav-popup-body,.nav-popup {
+        top: 66px;
+      }
+
+      .adm-popup-body-position-right:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(${logo}) no-repeat;
+        background-position-y: calc((100% / 2) - 60px);
+        background-size: 100%;
+        opacity: 0.25;
+      }
+
+      .nav-list,
+      .adm-list-body,
+      .adm-list-body-inner,
+      .adm-list-item {
+        background: none;
       }
     `}
   ></Global>
