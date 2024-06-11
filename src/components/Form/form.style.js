@@ -114,6 +114,28 @@ const FormContent = styled.div`
 			border-radius: 50px;
 		}
 	}
+
+	@media screen and (max-width: 390px) {
+		.tips {
+			.box {
+				padding: 8px 12px;
+
+				img {
+					width: 14px;
+					height: 14px;
+					margin-right: 4px;
+				}
+
+				p {
+					font-size: 0.8rem;
+				}
+			}
+
+			span {
+				font-size: 0.8rem;
+			}
+		}
+	}
 `;
 
 export { Head, FormContent };

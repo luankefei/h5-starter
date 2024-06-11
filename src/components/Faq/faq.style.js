@@ -20,8 +20,6 @@ const PageTitle = styled.h4`
 `;
 
 const Container = styled.div`
-  margin-top: 10px;
-
   img {
     width: 100%;
   }

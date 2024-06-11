@@ -98,6 +98,24 @@ const Container = styled.div`
 			}
 		}
 	}
+
+	@media screen and (max-width: 390px) {
+		.controller {
+			.name {
+				max-width: 230px;
+
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		}
+
+		.my-swiper {
+			dd p {
+				font-size: 1.25rem;
+			}
+		}
+	}
 `;
 
 export { Container };
