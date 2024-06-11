@@ -166,6 +166,53 @@ export const globalStyles = (
           padding: 0;
         }
       }
+
+      .my-form-popup {
+        z-index: 500;
+
+        .adm-popup-body {
+          top: 66px;
+        }
+
+        .form-content {
+          width: 92%;
+          margin: 0 auto;
+          text-align: center;
+          margin-bottom: 68px;
+
+          &:first-child {
+            margin-top: 24px;
+          }
+
+          p {
+            font-size: 1.38rem;
+            margin: 0;
+            line-height: 2rem;
+          }
+        }
+
+        .form-footer {
+          width: 100%;
+        }
+
+        .form-btn {
+          width: 67%;
+          height: 75px;
+          background: linear-gradient(92.79deg, #F7D73F 5.08%, #ECBA20 95.74%);
+          border: none;
+          outline: none;
+          text-align: center;
+          border-radius: 50px;
+          margin: 0 auto;
+          display: block;
+
+          span {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 700;
+          }
+        }
+      }
     `}
   ></Global>
 );

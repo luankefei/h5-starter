@@ -1,11 +1,13 @@
-import { Form, Button, Input } from "antd-mobile"
+import { useState  } from "react";
+import { Form, Button, Input, Popup } from "antd-mobile"
 
 import { Container, PageTitle } from "../Seminar/seminar.style";
 import { Head, FormContent } from "./form.style"
 
 import error from "../../assets/image/error.png";
 
-function FormComponent() {
+function FormComponent({ popupVisible, toggleVisible }) {
+
   return (
     <Container>
       <PageTitle>投資動画の受け取りはこちら</PageTitle>
@@ -27,7 +29,7 @@ function FormComponent() {
         <Form
           name='form'
           footer={
-            <Button block type='submit' color='primary' size='large'>
+            <Button block type='submit' color='primary' size='large' onClick={() => toggleVisible(true)}>
               上記の内容で動画を受け取る
             </Button>
           }
@@ -60,6 +62,32 @@ function FormComponent() {
           </div>
         </Form>
       </FormContent>
+
+      <Popup
+        visible={popupVisible}
+        mask={false}
+        className="my-form-popup"
+      >
+        <div className="form-content">
+          <p>XX　XX様</p>
+          <p>「Parkway金融研究センター」へのお申し込みありがとうございます！</p>
+        </div>
+
+        <div className="form-content">
+          <p>XX様がこの動画が見ると？</p> 
+          <p>・真っ当な投資方法が分かる！</p> 
+          <p>・投資でお金を増やす方法が分かる！ </p>
+          <p>・経済的自由にグッと近づく！ </p>
+          <p>・これから儲かる投資先が分かるようになる！</p>
+        </div>
+
+        <div className="form-footer">
+          <Button className="form-btn">
+            <span>今すぐ動画を見る方は</span>
+            <span>こちらをクリックしてください</span>
+          </Button>
+        </div>
+      </Popup>
     </Container>
   )
 }

@@ -38,7 +38,7 @@ const menus = [
   },
   {
     id: "video",
-    href: "#video",
+    href: "#form",
     title: "投資動画の受け取り",
   },
   {
@@ -48,19 +48,22 @@ const menus = [
   },
 ];
 
-function Navigation({ swiper }) {
+function Navigation({ closePopup }) {
   const [visible, setVisible] = useState(false);
-  // const swiper = useSwiper();
 
-  // const onNavClick = (id) => () => {};
+  const handleClick = () => {
+    setVisible(false)
+    closePopup()
+  }
 
   return (
     <>
       <NavContainer>
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" alt="logo"/>
 
         <>
           <img
+            alt="menu"
             src={menuIcon}
             className="menu-icon"
             onClick={() => setVisible(!visible)}
@@ -88,6 +91,7 @@ function Navigation({ swiper }) {
                       fontWeight: 700,
                       textAlign: "center",
                     }}
+                    onClick={handleClick}
                   >
                     {menu.title}
                   </List.Item>

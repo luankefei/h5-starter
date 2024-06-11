@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Nav from "../../components/Nav/index";
 import About from "../../components/About/About";
 import Information from "../../components/Information/Information";
@@ -38,22 +39,22 @@ const HomeComponent = () => (
       <ul className="image-list">
         <li>
           <a href="#about">
-            <img src={image1} />
+            <img src={image1} alt=""/>
           </a>
         </li>
         <li>
           <a href="#toForm">
-            <img src={image2} />
+            <img src={image2} alt=""/>
           </a>
         </li>
         <li>
           <a href="#introduce">
-            <img src={image3} />
+            <img src={image3} alt=""/>
           </a>
         </li>
         <li>
           <a href="#form">
-            <img src={image4} />
+            <img src={image4} alt=""/>
           </a>
         </li>
       </ul>
@@ -62,14 +63,25 @@ const HomeComponent = () => (
 );
 
 const Home = () => {
+  const [visible, setVisible] = useState(false)
   const scrollToTop = () => {
     const node = document.getElementById("home-wrapper");
     node.scrollTop = 0;
   };
 
+  const closePopup = () => {
+    if (visible) {
+      setVisible(false)
+    }
+  }
+
+  const toggleVisible = (visible) => {
+    setVisible(visible)
+  }
+
   return (
     <Container id="home-wrapper">
-      <Nav></Nav>
+      <Nav closePopup={closePopup}></Nav>
 
       <main className="main">
         <div id="home" style={{ marginTop: "-66px", paddingTop: "66px" }}>
@@ -105,7 +117,7 @@ const Home = () => {
         </div>
 
         <div id="form" style={{ marginTop: "-66px", paddingTop: "66px" }}>
-          <Form />
+          <Form popupVisible={visible} toggleVisible={toggleVisible}/>
         </div>
         <div id="faq" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Faq />
@@ -114,7 +126,7 @@ const Home = () => {
 
       <div className="to-top">
         <button onClick={scrollToTop}>
-          <img src={sortUpIcon} />
+          <img src={sortUpIcon} alt=""/>
         </button>
       </div>
     </Container>
