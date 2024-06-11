@@ -13,6 +13,7 @@ import people6 from "../../assets/image/people6.jpg";
 import people7 from "../../assets/image/people7.jpg";
 import people8 from "../../assets/image/people8.jpg";
 import people9 from "../../assets/image/people9.jpg";
+import people10 from "../../assets/image/people10.jpg";
 import leftArrow from "../../assets/image/Expand_left.png";
 import leftArrowStop from "../../assets/image/Expand_left_stop.png";
 import rightArrow from "../../assets/image/Expand_right.png";
@@ -33,6 +34,12 @@ const list = [
     image: people3,
     introduce:
       "<p>20年以上ウォール街の大手投資ファンド、証券会社などの実務経験を積み上げてきた東京に在住、シンガーポール出身の元ファンドマネジャー、現在Parkway金融投資機関のファイナンス.アドバイザーとして活躍、株や為替投資、資産運用のコンサルティング業務を努める。</p>",
+  },
+  {
+    name: "前田　靖幸   首席研究員",
+    image: people10,
+    introduce:
+      "<p>1978年9月25日京都生まれ<br/>1998年～2008年　京都で懐始料理を10年修行する<br />2008年　トレードスタート<br />2015年　2億円　収益達成<br />2016年　IB活動　スタート<br />2020年　日本法人　設立<br />2022年　香港法人　設立<br />2024年　Park way研究所　参加<br /></p>",
   },
   {
     name: "林 孝雄 チーフアドバイザー",
