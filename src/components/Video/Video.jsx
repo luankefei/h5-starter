@@ -48,15 +48,6 @@ function Question() {
           上記の内容で動画を受け取る
         </button>
       </QrCodeWrapper>
-
-      <Modal
-        visible={visible}
-        // showCloseButton={true}
-        closeOnMaskClick={true}
-        onClose={onModalClose}
-        transparent
-        content={<img className="qrcode-image" src={qrcodeImage} />}
-      ></Modal>
     </Container>
   );
 }

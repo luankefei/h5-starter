@@ -180,7 +180,7 @@ export const globalStyles = (
           text-align: center;
           margin-bottom: 68px;
 
-          &:first-child {
+          &:first-of-type {
             margin-top: 24px;
           }
 
@@ -210,6 +210,46 @@ export const globalStyles = (
             display: block;
             font-size: 1.3rem;
             font-weight: 700;
+          }
+        }
+
+        .video {
+          width: 76%;
+          margin: auto;
+          border: 1px solid #000;
+          border-radius: 5px;
+          background: #FBFAFC;
+          height: 215px;
+          position: relative;
+          
+          .play-btn {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #676767;
+            border-radius: 50%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 35px;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .social {
+          width: 76%;
+          margin: auto;
+
+          img {
+            width: 100%;
           }
         }
       }

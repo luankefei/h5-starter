@@ -1,12 +1,21 @@
-import { useState  } from "react";
+import { useState, useEffect } from "react";
 import { Form, Button, Input, Popup } from "antd-mobile"
 
 import { Container, PageTitle } from "../Seminar/seminar.style";
 import { Head, FormContent } from "./form.style"
 
 import error from "../../assets/image/error.png";
+import play from "../../assets/image/play.png"
+import social from "../../assets/image/social.png"
 
 function FormComponent({ popupVisible, toggleVisible }) {
+  const [videoVisible, setVideoVisible] = useState(false)
+
+  useEffect(() => {
+    if (!popupVisible) {
+      setVideoVisible(false)
+    }
+  }, [popupVisible])
 
   return (
     <Container>
@@ -82,11 +91,43 @@ function FormComponent({ popupVisible, toggleVisible }) {
         </div>
 
         <div className="form-footer">
-          <Button className="form-btn">
+          <Button className="form-btn" onClick={() => setVideoVisible(true)}>
             <span>今すぐ動画を見る方は</span>
             <span>こちらをクリックしてください</span>
           </Button>
         </div>
+      </Popup>
+
+      <Popup
+        visible={videoVisible}
+        mask={false}
+        className="my-form-popup"
+      >
+        <div className="form-content">
+          <p>———— 　動画視聴　————</p>
+        </div>
+
+        <div className="video">
+          <div className="play-btn">
+            <img src={play} alt=""/>
+          </div>
+        </div>
+
+        <div className="social">
+        <img src={social} alt=""/>
+        </div>
+
+        <div className="form-content">
+          <p>Parkwayからの特別なお知らせ！</p> 
+          <p>特別なお知らせがございますので、</p> 
+          <p>ぜひ最後までご視聴ください。 </p>
+        </div>
+
+        {/* <div className="form-footer">
+          <Button className="form-btn">
+            <span>今すぐ動画を見る方は</span>
+          </Button>
+        </div> */}
       </Popup>
     </Container>
   )

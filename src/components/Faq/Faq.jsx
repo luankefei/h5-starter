@@ -1,7 +1,20 @@
+import { useState } from "react";
+import { Modal } from "antd-mobile";
 import { Container, PageTitle, PageTitleWrapper, Content } from "./faq.style";
 import image1 from "../../assets/image/faq.png";
+import qrcodeImage from "../../assets/image/qrcode.png";
 
 function Question() {
+  const [visible, setVisible] = useState(false);
+
+  const onQcodeClick = () => {
+    setVisible(true);
+  };
+  
+  const onModalClose = () => {
+    setVisible(false);
+  };
+
   return (
     <Container>
       <PageTitleWrapper>
@@ -75,8 +88,17 @@ function Question() {
         </p>
       </Content>
       <div>
-        <img src={image1} />
+        <img src={image1} onClick={onQcodeClick}/>
       </div>
+
+      <Modal
+        visible={visible}
+        // showCloseButton={true}
+        closeOnMaskClick={true}
+        onClose={onModalClose}
+        transparent
+        content={<img className="qrcode-image" src={qrcodeImage} />}
+      ></Modal>
     </Container>
   );
 }

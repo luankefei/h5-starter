@@ -123,9 +123,7 @@ const Home = () => {
         <div id="faq" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Faq />
         </div>
-        <div id="video" style={{ marginTop: "-66px", paddingTop: "66px" }}>
-          <Video />
-        </div>
+        {/* <Video /> */}
       </main>
 
       <div className="to-top">
