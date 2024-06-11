@@ -22,7 +22,15 @@ const PageTitle = styled.h4`
 const Container = styled.div`
   img {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
+`;
+
+const Footer = styled.div`
+  width: 100vw;
+  height: 35.46vw;
+  overflow: hidden;
 `;
 
 // const GrayContent = styled.div`
@@ -68,4 +76,4 @@ const Content = styled.div`
   }
 `;
 
-export { Container, PageTitle, PageTitleWrapper, Content };
+export { Container, PageTitle, PageTitleWrapper, Content, Footer };

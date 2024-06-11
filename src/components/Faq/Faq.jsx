@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Modal } from "antd-mobile";
-import { Container, PageTitle, PageTitleWrapper, Content } from "./faq.style";
+import {
+  Container,
+  PageTitle,
+  PageTitleWrapper,
+  Content,
+  Footer,
+} from "./faq.style";
 import image1 from "../../assets/image/faq.png";
 import qrcodeImage from "../../assets/image/qrcode.png";
 
@@ -10,7 +16,7 @@ function Question() {
   const onQcodeClick = () => {
     setVisible(true);
   };
-  
+
   const onModalClose = () => {
     setVisible(false);
   };
@@ -87,9 +93,9 @@ function Question() {
           ※無料講座受講後、弊中心からメールでお得なご案内等をお送りすることはございますが、不要な場合はワンクリックで配信を停止いただけます。
         </p>
       </Content>
-      <div>
-        <img src={image1} onClick={onQcodeClick}/>
-      </div>
+      <Footer>
+        <img src={image1} onClick={onQcodeClick} />
+      </Footer>
 
       <Modal
         visible={visible}
