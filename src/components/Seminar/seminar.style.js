@@ -14,7 +14,7 @@ const PageTitle = styled.h4`
 	background-size: contain;
 	font-size: 1.8rem;
 
-	@media screen and (max-width: 390px) {
+	@media screen and (min-width: 375px) and (max-width: 400px) {
 		font-size: 1.6rem;
 	}
 `;

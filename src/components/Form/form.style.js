@@ -115,7 +115,8 @@ const FormContent = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 390px) {
+
+	@media screen and (min-width: 375px) and (max-width: 400px) {
 		.tips {
 			.box {
 				padding: 8px 12px;

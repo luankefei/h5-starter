@@ -8,19 +8,20 @@ const Container = styled.div`
 		border-radius: 20px;
 		margin-bottom: 34px;
 		padding: 36px 21px 12px;
-		text-align: center;
 
 		b {
 			font-size: 1.5rem;
 			font-weight: 600;
 			margin-bottom: 12px;
 			display: block;
+			text-align: center;
 		}
 
 		p {
 			font-size: 1.2rem;
 			line-height: 30px;
 			margin: 0;
+			text-align: left;
 		}
 	}
 `;

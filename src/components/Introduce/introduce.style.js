@@ -9,7 +9,7 @@ const Container = styled.div`
     dl {
       text-align: center;
       margin: 0;
-      padding: 1.9rem 1.7rem 3rem;
+      padding: 1.9rem 1.7rem 0;
     }
 
     dt {
@@ -25,10 +25,17 @@ const Container = styled.div`
       height: 330px;
       overflow-y: auto;
 
+      .appointment {
+        font-size: 1.38rem;
+        text-align: left;
+      }
+
       p {
         font-size: 1.38rem;
         margin: 0;
         line-height: 2rem;
+        text-align: left;
+        margin-bottom: 10px;
       }
     }
   }
@@ -81,7 +88,7 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 400px) {
     .controller {
       .name {
         max-width: 222px;
@@ -98,24 +105,6 @@ const Container = styled.div`
       }
     }
   }
-
-  // @media screen and (max-width: 390px) {
-  // 	.controller {
-  // 		.name {
-  // 			max-width: 230px;
-
-  // 			p {
-  // 				font-size: 1.5rem;
-  // 			}
-  // 		}
-  // 	}
-
-  // 	.my-swiper {
-  // 		dd p {
-  // 			font-size: 1.25rem;
-  // 		}
-  // 	}
-  // }
 `;
 
 export { Container };

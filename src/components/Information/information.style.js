@@ -49,7 +49,7 @@ const Container = styled.div`
 				margin: 0;
 				font-size: 1.38rem;
 				line-height: 2rem;
-				text-indent: 1rem;
+				// text-indent: 1rem;
 			}
 
 			.show-more {
@@ -82,7 +82,7 @@ const Container = styled.div`
 		}
 	}
 
-	@media screen and (max-width: 375px) {
+	@media screen and (min-width: 375px) and (max-width: 400px) {
 		.letter {
 			.content {
 				p {
@@ -93,21 +93,6 @@ const Container = styled.div`
 
 			.long-content {
 				height: 1050px;
-			}
-		}
-	}
-
-	@media screen and (max-width: 390px) {
-		.letter {
-			.content {
-				p {
-					font-size: 1.23rem;
-					line-height: 1.9rem;
-				}
-			}
-
-			.long-content {
-				height: 1065px;
 
 				.bottom {
 					margin-top: 2rem;
