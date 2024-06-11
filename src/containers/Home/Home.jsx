@@ -9,6 +9,7 @@ import Reason from "../../components/Reason/Reason";
 import Voice from "../../components/Voice/Voice";
 import CustomerVoice from "../../components/CustomerVoice/CustomerVoice";
 import Form from "../../components/Form/Form";
+import Faq from "../../components/Faq/Faq";
 
 import { Container } from "./home.style";
 
@@ -105,6 +106,9 @@ const Home = () => {
 
         <div id="form" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Form />
+        </div>
+        <div id="faq" style={{ marginTop: "-66px", paddingTop: "66px" }}>
+          <Faq />
         </div>
       </main>
 

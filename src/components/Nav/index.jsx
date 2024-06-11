@@ -42,7 +42,7 @@ const menus = [
     title: "投資動画の受け取り",
   },
   {
-    id: "FAQ",
+    id: "faq",
     href: "#FAQ",
     title: "よくある質問",
   },
