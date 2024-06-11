@@ -13,6 +13,10 @@ const PageTitle = styled.h4`
 	background: url(${lace1}) no-repeat center;
 	background-size: contain;
 	font-size: 1.8rem;
+
+	@media screen and (max-width: 390px) {
+		font-size: 1.6rem;
+	}
 `;
 
 const Title = styled.h4`

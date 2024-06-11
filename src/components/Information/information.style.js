@@ -96,5 +96,24 @@ const Container = styled.div`
 			}
 		}
 	}
+
+	@media screen and (max-width: 390px) {
+		.letter {
+			.content {
+				p {
+					font-size: 1.23rem;
+					line-height: 1.9rem;
+				}
+			}
+
+			.long-content {
+				height: 1065px;
+
+				.bottom {
+					margin-top: 2rem;
+				}
+			}
+		}
+	}
 `;
 export { Container };
