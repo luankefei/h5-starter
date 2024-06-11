@@ -43,7 +43,7 @@ const menus = [
   },
   {
     id: "faq",
-    href: "#FAQ",
+    href: "#faq",
     title: "よくある質問",
   },
 ];

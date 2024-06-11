@@ -44,7 +44,7 @@ function FormComponent({ popupVisible, toggleVisible }) {
           }
         >
           <Form.Item name='name' label='お名前' rules={[{ required: true }]}>
-            <Input placeholder='例：山田太郎' />
+            <Input placeholder='例：山田太郎'/>
           </Form.Item>
           <Form.Item name='ruby' label='ふりがな' rules={[{ required: true }]}>
             <Input placeholder='例：やまだたろう' />

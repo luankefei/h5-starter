@@ -11,7 +11,6 @@ import Voice from "../../components/Voice/Voice";
 import CustomerVoice from "../../components/CustomerVoice/CustomerVoice";
 import Form from "../../components/Form/Form";
 import Faq from "../../components/Faq/Faq";
-import Video from "../../components/Video/Video";
 
 import { Container } from "./home.style";
 
@@ -20,6 +19,11 @@ import image1 from "../../assets/image/image1.png";
 import image2 from "../../assets/image/image2.png";
 import image3 from "../../assets/image/image3.png";
 import image4 from "../../assets/image/image4.png";
+
+const scrollToBottom = () => {
+  const node = document.getElementById("home-wrapper");
+  node.scrollTop = node.scrollHeight;
+};
 
 const HomeComponent = () => (
   <div className="home">
@@ -54,7 +58,7 @@ const HomeComponent = () => (
           </a>
         </li>
         <li>
-          <a href="#form">
+          <a onClick={scrollToBottom}>
             <img src={image4} alt=""/>
           </a>
         </li>

@@ -30,6 +30,7 @@ const GrayContent = styled.div`
 	.sub-title {
 		font-size: 1.5rem;
 		font-weight: bold;
+		margin: 10px 0;
 	}
 `;
 
@@ -46,11 +47,15 @@ const Content = styled.div`
 		margin-bottom: 20px;
 	}
 
+	span {
+		display: block;
+	}
+
 	p {
-		font-size: 1.2rem;
+		font-size: 18px;
 		line-height: 1.8rem;
 		margin-top: 0;
-		margin-bottom: 20px;
+		margin-bottom: 15px;
 	}
 
 	img {

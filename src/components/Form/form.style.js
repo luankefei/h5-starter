@@ -49,7 +49,7 @@ const FormContent = styled.div`
 	.adm-form-item-child-inner {
 		border: 1px solid #858c94;
 		border-radius: 8px;
-		padding: 12px 16px;
+		padding: 6px 16px;
 		margin-top: 8px;
 	}
 
@@ -97,7 +97,7 @@ const FormContent = styled.div`
 		margin-top: 23px;
 
 		b {
-			font-size: 1.23rem;
+			font-size: 1.2rem;
 		}
 	}
 
@@ -114,7 +114,6 @@ const FormContent = styled.div`
 			border-radius: 50px;
 		}
 	}
-
 
 	@media screen and (min-width: 375px) and (max-width: 400px) {
 		.tips {

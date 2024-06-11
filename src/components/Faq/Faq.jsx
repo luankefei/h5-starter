@@ -94,7 +94,7 @@ function Question() {
         </p>
       </Content>
       <Footer>
-        <img src={image1} onClick={onQcodeClick} />
+        <img src={image1} onClick={onQcodeClick}/>
       </Footer>
 
       <Modal
