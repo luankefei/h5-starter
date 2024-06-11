@@ -10,6 +10,7 @@ import Voice from "../../components/Voice/Voice";
 import CustomerVoice from "../../components/CustomerVoice/CustomerVoice";
 import Form from "../../components/Form/Form";
 import Faq from "../../components/Faq/Faq";
+import Video from "../../components/Video/Video";
 
 import { Container } from "./home.style";
 
@@ -109,6 +110,9 @@ const Home = () => {
         </div>
         <div id="faq" style={{ marginTop: "-66px", paddingTop: "66px" }}>
           <Faq />
+        </div>
+        <div id="video" style={{ marginTop: "-66px", paddingTop: "66px" }}>
+          <Video />
         </div>
       </main>
 
