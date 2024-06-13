@@ -47,9 +47,8 @@ const Container = styled.div`
 
 			p {
 				margin: 0;
-				font-size: 1.38rem;
-				line-height: 2rem;
-				// text-indent: 1rem;
+				font-size: 1.3rem;
+				line-height: 1.8rem;
 			}
 
 			.show-more {
@@ -69,14 +68,18 @@ const Container = styled.div`
 			background-position: top left, bottom right;
 			background-repeat: no-repeat;
 
+			p {
+				margin-bottom: 15px;
+			}
+
 			.bottom {
 				position: absolute;
 				right: 3rem;
-				margin-top: 3.5rem;
+				margin-top: 2rem;
 				text-align: center;
 
 				p {
-					line-height: 2.5rem;
+					line-height: 2rem;
 				}
 			}
 		}
@@ -95,7 +98,7 @@ const Container = styled.div`
 				height: 1050px;
 
 				.bottom {
-					margin-top: 2rem;
+					margin-top: 1.4rem;
 				}
 			}
 		}

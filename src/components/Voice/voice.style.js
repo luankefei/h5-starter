@@ -52,7 +52,7 @@ const Content = styled.div`
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 1.8rem;
 		margin-top: 0;
 		margin-bottom: 15px;
