@@ -1,21 +1,21 @@
 import { css, Global } from "@emotion/react";
 
 import logo from "../assets/image/logo.png";
+// import font from "../assets/MS+Mincho.TTF.ttf";
 const prefix = "https://d2dfipunm8t5y9.cloudfront.net/ingroup-official";
+
+const FONT_URL =
+  "https://clock-in-img.oss-cn-hangzhou.aliyuncs.com/gw_mincho.ttf";
+
+// console.log("font", font);
 
 export const globalStyles = (
   <Global
     styles={css`
       @font-face {
-        font-family: Raleway, Infra;
-        font-weight: 400;
-        src: url(/font/InfraRegular.otf);
-      }
-
-      @font-face {
-        font-family: Raleway, Infra;
-        font-weight: 500;
-        src: url(/font/InfraMedium.otf);
+        font-family: "MS Mincho";
+        font-weight: Regular;
+        src: url(${FONT_URL}) format("truetype");
       }
 
       ul,
@@ -33,13 +33,14 @@ export const globalStyles = (
 
       body {
         background: #f5f5f5;
-        font-family: Raleway, Infra, Arial, Helvetica, sans-serif;
+        font-family: "MS Mintro", "Times New Roman", Raleway, Infra, Arial,
+          Helvetica, sans-serif;
         color: #111111;
         transition: background 0.5s;
         overflow: hidden;
         margin: 0;
         font-size: 28px;
-        background-color: #F4F4F4;
+        background-color: #f4f4f4;
       }
 
       .webgl {
@@ -72,7 +73,7 @@ export const globalStyles = (
         justify-content: center;
       }
 
-      .loading {
+      /* .loading {
         background-image: url(${prefix}/img/loading2.png);
         width: 2160px;
         height: 1350px;
@@ -95,9 +96,9 @@ export const globalStyles = (
           animation-iteration-count: infinite;
           content: "...";
         }
-      }
+      } */
 
-      @keyframes loadingDot {
+      /* @keyframes loadingDot {
         0% {
           content: "";
         }
@@ -124,15 +125,15 @@ export const globalStyles = (
         opacity: 0;
         position: absolute;
         transform: scale(0.7);
-      }
+      } */
 
-      .hover-area {
+      /* .hover-area {
         opacity: 0;
         width: 320px;
         height: 260px;
         position: absolute;
         cursor: pointer;
-      }
+      } */
 
       .nav-popup-body,
       .nav-popup {
@@ -198,7 +199,7 @@ export const globalStyles = (
         .form-btn {
           width: 67%;
           height: 75px;
-          background: linear-gradient(92.79deg, #F7D73F 5.08%, #ECBA20 95.74%);
+          background: linear-gradient(92.79deg, #f7d73f 5.08%, #ecba20 95.74%);
           border: none;
           outline: none;
           text-align: center;
@@ -218,10 +219,10 @@ export const globalStyles = (
           margin: auto;
           border: 1px solid #000;
           border-radius: 5px;
-          background: #FBFAFC;
+          background: #fbfafc;
           height: 215px;
           position: relative;
-          
+
           .play-btn {
             width: 60px;
             height: 60px;
@@ -257,6 +258,4 @@ export const globalStyles = (
   ></Global>
 );
 
-export default {
-  globalStyles,
-};
+export default globalStyles;

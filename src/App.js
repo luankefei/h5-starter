@@ -1,5 +1,5 @@
 import Home from "./containers/Home/Home";
-import { globalStyles } from "./styles/globals";
+import globalStyles from "./styles/globals";
 
 function App() {
   return (
