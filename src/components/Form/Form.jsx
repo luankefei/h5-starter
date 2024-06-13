@@ -78,12 +78,12 @@ function FormComponent({ popupVisible, toggleVisible }) {
         className="my-form-popup"
       >
         <div className="form-content">
-          <p>XX　XX様</p>
+          <p>様</p>
           <p>「Parkway金融研究センター」へのお申し込みありがとうございます！</p>
         </div>
 
         <div className="form-content">
-          <p>XX様がこの動画が見ると？</p> 
+          <p>様がこの動画が見ると？</p> 
           <p>・真っ当な投資方法が分かる！</p> 
           <p>・投資でお金を増やす方法が分かる！ </p>
           <p>・経済的自由にグッと近づく！ </p>

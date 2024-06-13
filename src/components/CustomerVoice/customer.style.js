@@ -29,7 +29,7 @@ const Content = styled.div`
 
 	p {
 		margin: 0;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 2.3rem;
 	}
 
