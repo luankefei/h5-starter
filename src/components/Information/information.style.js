@@ -98,7 +98,11 @@ const Container = styled.div`
 				height: 1050px;
 
 				.bottom {
-					margin-top: 1.4rem;
+					margin-top: 1.2rem;
+
+					p {
+						line-height: 1.6rem;
+					}
 				}
 			}
 		}
