@@ -61,7 +61,7 @@ const Content = styled.div`
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
     // font-family: Raleway;
     line-height: 18px;
 

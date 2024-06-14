@@ -6,7 +6,7 @@ import {
   Content,
   QrCodeWrapper,
 } from "./video.style";
-import qrcodeImage from "../../assets/image/qrcode.png";
+import qrcodeImage from "../../assets/image/qrcode.jpg";
 
 import { Modal } from "antd-mobile";
 

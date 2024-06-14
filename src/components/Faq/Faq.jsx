@@ -8,7 +8,7 @@ import {
   Footer,
 } from "./faq.style";
 import image1 from "../../assets/image/faq.png";
-import qrcodeImage from "../../assets/image/qrcode.png";
+import qrcodeImage from "../../assets/image/qrcode.jpg";
 
 function Question() {
   const [visible, setVisible] = useState(false);
@@ -50,7 +50,7 @@ function Question() {
           <br />A
           理由は２つございます。１．投資人口を増やすことがParkway金融研究センターの使命であるため。２．Parkway金融研究センターを少しでも多くの人の知って頂くため。
         </p>
-        <p style={{ fontSize: '14px' }}>
+        <p style={{ fontSize: "14px" }}>
           <span className="underline">
             Q3、どのような方が参加されていますか？
           </span>
@@ -94,7 +94,7 @@ function Question() {
         </p>
       </Content>
       <Footer>
-        <img src={image1} onClick={onQcodeClick}/>
+        <img src={image1} onClick={onQcodeClick} />
       </Footer>
 
       <Modal
