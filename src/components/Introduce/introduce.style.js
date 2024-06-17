@@ -1,110 +1,115 @@
 import styled from "@emotion/styled";
 
 const Container = styled.div`
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
 
-	.my-swiper {
-		background: #fff;
+  .my-swiper {
+    background: #fff;
 
-		dl {
-			text-align: center;
-			margin: 0;
-			padding: 1.9rem 1.7rem 0;
-		}
+    dl {
+      text-align: center;
+      margin: 0;
+      padding: 1.9rem 1.7rem 0;
+    }
 
-		dt {
-			img {
-				width: 160px;
-				border-radius: 1px;
-			}
-		}
+    dt {
+      width: 160px;
+      height: 143px;
+      overflow: hidden;
+      margin: 0 auto;
 
-		dd {
-			margin: 0;
-			margin-top: 30px;
-			height: 330px;
-			overflow-y: auto;
+      img {
+        width: 100%;
+        border-radius: 1px;
+      }
+    }
 
-			.appointment {
-				font-size: 18px;
-				text-align: center;
-				font-weight: 700;
-				margin-bottom: 16px;
+    dd {
+      margin: 0;
+      margin-top: 30px;
+      height: 330px;
+      overflow-y: auto;
 
-				span {
-					margin-right: 30px;
-				}
-			}
+      .appointment {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 16px;
 
-			p {
-				font-size: 16px;
-				margin: 0;
-				line-height: 2rem;
-				text-align: left;
-				margin-bottom: 12px;
-			}
-		}
-	}
+        span {
+          margin-right: 30px;
+        }
+      }
 
-	.controller {
-		width: 100%;
-		display: flex;
-		padding: 0 28px;
-		justify-content: space-between;
-		margin-bottom: 15px;
-		box-sizing: border-box;
-		align-items: center;
+      p {
+        font-size: 16px;
+        margin: 0;
+        line-height: 2rem;
+        text-align: left;
+        margin-bottom: 12px;
+      }
+    }
+  }
 
-		.left,
-		.right {
-			height: 1.84rem;
+  .controller {
+    width: 100%;
+    display: flex;
+    padding: 0 28px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    align-items: center;
 
-			img {
-				width: 1.84rem;
-			}
-		}
+    .left,
+    .right {
+      height: 1.84rem;
 
-		.name {
-			max-width: 248px;
+      img {
+        width: 1.84rem;
+      }
+    }
 
-			p {
-				width: 100%;
-				font-size: 1.8rem;
-				margin: 0;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-			}
-		}
-	}
+    .name {
+      max-width: 248px;
 
-	.swiper-pagination {
-		width: 105px !important;
-		left: 45% !important;
+      p {
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
 
-		.swiper-pagination-bullet {
-			width: 15px;
-			height: 15px;
-		}
+  .swiper-pagination {
+    width: 105px !important;
+    left: 45% !important;
 
-		.swiper-pagination-bullet-active {
-			width: 30px;
-			background: #9b9b9b;
-			border-radius: 20px;
-		}
-	}
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+    }
 
-	@media screen and (min-width: 375px) and (max-width: 400px) {
-		.controller {
-			.name {
-				max-width: 222px;
+    .swiper-pagination-bullet-active {
+      width: 30px;
+      background: #9b9b9b;
+      border-radius: 20px;
+    }
+  }
 
-				p {
-					font-size: 1.5rem;
-				}
-			}
-		}
-	}
+  @media screen and (min-width: 375px) and (max-width: 400px) {
+    .controller {
+      .name {
+        max-width: 222px;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 `;
 
 export { Container };

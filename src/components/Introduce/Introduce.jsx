@@ -149,11 +149,16 @@ function Introduce() {
             <SwiperSlide key={item.name}>
               <dl>
                 <dt>
-                  <img src={item.image} alt=""/>
+                  <img src={item.image} alt="" />
                 </dt>
                 <dd>
-                  <div className="appointment" dangerouslySetInnerHTML={{ __html: item.appointment }}></div>
-                  <div dangerouslySetInnerHTML={{ __html: item.introduce }}></div>
+                  <div
+                    className="appointment"
+                    dangerouslySetInnerHTML={{ __html: item.appointment }}
+                  ></div>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: item.introduce }}
+                  ></div>
                 </dd>
               </dl>
             </SwiperSlide>
