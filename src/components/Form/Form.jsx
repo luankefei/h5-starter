@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Form, Button, Input, Popup } from "antd-mobile";
 
 import { Container, PageTitle } from "../Seminar/seminar.style";
@@ -119,7 +119,15 @@ function FormComponent({ popupVisible, toggleVisible }) {
 
         <div className="video">
           <div className="play-btn">
-            <img src={play} alt="" />
+            <video
+              src="https://research.parkway-market.com/uploads/20240613/c5f9e4f1e1e73f1cdfc50b4af4865c53.mp4" preload="auto"
+              controls
+            ></video>
+            {/* {!isPlay ? (
+              <div className="video-mask">
+                <img src={play} alt="" onClick={playVideo}/>
+              </div>
+            ) : null} */}
           </div>
         </div>
 

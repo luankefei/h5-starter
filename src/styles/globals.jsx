@@ -222,12 +222,10 @@ export const globalStyles = (
           background: #fbfafc;
           height: 215px;
           position: relative;
+          background-color: #f1f1f1;
 
           .play-btn {
-            width: 60px;
-            height: 60px;
-            border: 1px solid #676767;
-            border-radius: 50%;
+            width: 100%;
             margin: auto;
             position: absolute;
             top: 0;
@@ -238,10 +236,25 @@ export const globalStyles = (
             justify-content: center;
             align-items: center;
 
-            img {
-              width: 35px;
-              margin-left: 10px;
+            video {
+              width: 100%;
             }
+
+            // .video-mask {
+            //   width: 100%;
+            //   height: 100%;
+            //   position: absolute;
+            //   background: rgba(255, 255, 255, .6);
+            //   display: flex;
+            //   justify-content: center;
+            //   align-items: center;
+            //   top: 0;
+
+            //   img {
+            //     width: 35px;
+            //     margin-left: 10px;
+            //   }
+            // }
           }
         }
 
