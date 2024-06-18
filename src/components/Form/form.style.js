@@ -111,7 +111,7 @@ const FormContent = styled.div`
     button {
       border: none;
       margin: auto;
-      width: 77%;
+      width: 100%;
       height: 45px;
       background: #36c773;
       color: #fff;

@@ -31,7 +31,7 @@ const Container = styled.div`
       overflow-y: auto;
 
       .appointment {
-        font-size: 18px;
+        font-size: 17px;
         text-align: center;
         font-weight: 700;
         margin-bottom: 16px;
