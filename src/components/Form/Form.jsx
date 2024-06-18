@@ -10,12 +10,26 @@ import social from "../../assets/image/social.png";
 
 function FormComponent({ popupVisible, toggleVisible }) {
   const [videoVisible, setVideoVisible] = useState(false);
+  const [form] = Form.useForm();
+  const [validFaild, setValidFaild] = useState(false);
 
   useEffect(() => {
     if (!popupVisible) {
       setVideoVisible(false);
     }
   }, [popupVisible]);
+
+  const handleSubmit = async () => {
+    try {
+      const values = await form.validateFields();
+      console.log("success", values);
+      toggleVisible(true);
+      setValidFaild(false);
+    } catch (err) {
+      setValidFaild(true);
+      console.log("error", err);
+    }
+  };
 
   return (
     <Container>
@@ -42,32 +56,59 @@ function FormComponent({ popupVisible, toggleVisible }) {
       <FormContent>
         <Form
           name="form"
+          form={form}
           footer={
             <Button
               block
               type="submit"
               color="primary"
               size="large"
-              onClick={() => toggleVisible(true)}
+              onClick={handleSubmit}
             >
               上記の内容で動画を受け取る
             </Button>
           }
         >
-          <Form.Item name="name" label="お名前">
+          <Form.Item
+            name="name"
+            label="お名前"
+            rules={[{ required: true, message: "" }]}
+            className={validFaild ? "invalid" : undefined}
+          >
             <Input placeholder="例：山田太郎" />
           </Form.Item>
-          <Form.Item name="ruby" label="ふりがな">
+          <Form.Item
+            name="ruby"
+            label="ふりがな"
+            rules={[{ required: true, message: "" }]}
+            className={validFaild ? "invalid" : undefined}
+          >
             <Input placeholder="例：やまだたろう" />
           </Form.Item>
-          <Form.Item name="email" label="メールアドレス">
-            <Input placeholder="softbannk、i.cloud以外" />
+          <Form.Item
+            name="email"
+            label="メールアドレス"
+            rules={[{ required: true, message: "" }]}
+            className={validFaild ? "invalid" : undefined}
+          >
+            <Input
+              style={{ borderColor: validFaild ? "red" : "rgb(51, 51, 51)" }}
+              placeholder="softbannk、i.cloud以外"
+            />
           </Form.Item>
           <div className="tips">
             <span>※ご返答までに最大2営業日かかる場合があります。</span>
           </div>
-          <Form.Item name="phone" label="携帯番号">
-            <Input placeholder="09000001111" />
+          <Form.Item
+            name="phone"
+            label="携帯番号"
+            rules={[{ required: true, message: "" }]}
+            className={validFaild ? "invalid" : undefined}
+          >
+            <Input
+              className={validFaild ? "invalid" : undefined}
+              placeholder="09000001111"
+            />
           </Form.Item>
           <div className="tips">
             <div className="box">
@@ -120,7 +161,8 @@ function FormComponent({ popupVisible, toggleVisible }) {
         <div className="video">
           <div className="play-btn">
             <video
-              src="https://research.parkway-market.com/uploads/20240613/c5f9e4f1e1e73f1cdfc50b4af4865c53.mp4" preload="auto"
+              src="https://research.parkway-market.com/uploads/20240613/c5f9e4f1e1e73f1cdfc50b4af4865c53.mp4"
+              preload="auto"
               controls
             ></video>
             {/* {!isPlay ? (
