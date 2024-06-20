@@ -4,16 +4,16 @@ import { Pagination } from "swiper/modules";
 import { Container } from "./introduce.style";
 import { PageTitle } from "../Seminar/seminar.style";
 
-import people1 from "../../assets/image/people1.jpg";
-import people2 from "../../assets/image/people2.jpg";
+import people1 from "../../assets/image/people1.png";
+import people2 from "../../assets/image/people2.png";
 import people3 from "../../assets/image/people3.jpg";
-import people4 from "../../assets/image/people4.jpg";
-import people5 from "../../assets/image/people5.jpg";
-import people6 from "../../assets/image/people6.jpg";
-import people7 from "../../assets/image/people7.jpg";
-import people8 from "../../assets/image/people8.jpg";
-import people9 from "../../assets/image/people9.jpg";
-import people10 from "../../assets/image/people10.jpg";
+import people4 from "../../assets/image/people4.png";
+import people5 from "../../assets/image/people5.png";
+import people6 from "../../assets/image/people6.png";
+import people7 from "../../assets/image/people7.png";
+import people8 from "../../assets/image/people8.png";
+import people9 from "../../assets/image/people9.png";
+import people10 from "../../assets/image/people10.png";
 import leftArrow from "../../assets/image/Expand_left.png";
 import leftArrowStop from "../../assets/image/Expand_left_stop.png";
 import rightArrow from "../../assets/image/Expand_right.png";
@@ -31,7 +31,7 @@ const list = [
       "<p>香港大学のMBA学位を持ち、20年以上にわたるグローバル金融市場のバックグラウンドと、16年間のトレーダーとしての取引経験を持っています。また、複数の上場企業の高級役員として勤務し、資産と財富管理、ブローカー業、クレジット、保険、および小売および機構金融サービスの専門知識を積み重ねています。</p><p>現在は、Parkway Groupの創設者として、株式、固定所得、通貨、および商品市場のクライアントに基本的な洞察と分析、また幅広い金融投資および実行サービスを提供しています。</p>",
   },
   {
-    name: "木村 達也",
+    name: "JAKE CHEE",
     appointment: "<span>副センター長</span>木村 達也",
     image: people3,
     introduce:
@@ -73,7 +73,7 @@ const list = [
       "<p>日本の大学院でIT知識を学び、富士通に入社。その後、豪州に移民、投資ファンドに転職。</p><p>為替取引と株式市場に専念し、専門知識や実践経験を積み重ね、自分なりの投資手法で活躍している。</p><p>現在ではParkway金融研究センターの研究員として、バリュー投資のコンサルティングサービスを担当している。</p><p>逆張り＋押し目買いの投資手法にご興味のある方はぜひ時間を作って話しましょう。</p>",
   },
   {
-    name: "フルヤ",
+    name: "古谷 正人",
     appointment: "<span>チーフアナリスト</span>フルヤ",
     image: people6,
     introduce:
