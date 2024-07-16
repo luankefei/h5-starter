@@ -37,7 +37,7 @@ function Parkway() {
         <dl>
           <dt><img src={four}/></dt>
           <dd>
-            <p><span>１年で２倍</span>になる投資先を探す3つのコツなど独自ノウハウ。</p>
+            <p><span>１年で資産倍増</span>できる投資先を探す3つのコツなど独自ノウハウ。</p>
           </dd>
         </dl>
 

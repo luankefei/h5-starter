@@ -16,8 +16,7 @@ function About() {
      <section>
         <b>ビジョン（目指す世界）</b>
         <p>目指すのはFinancial　Free。</p>
-        <p>経済的な「自由」と「自立」が身に着</p>
-        <p>く学びの場所。</p>
+        <p>経済的な「⾃⽴」と「⾃由」を⼿に⼊れる学びの場を提供。</p>
      </section>
    </Container>
  )

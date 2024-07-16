@@ -7,7 +7,7 @@ import {
   Content,
   Footer,
 } from "./faq.style";
-import image1 from "../../assets/image/faq.png";
+import image1 from "../../assets/image/faq.jpg";
 import qrcodeImage from "../../assets/image/qrcode.jpg";
 
 function Question() {
@@ -76,7 +76,6 @@ function Question() {
             Q6、セミナー動画はいつ見ることができますか／動画を繰り返し見ることはできますか
           </span>
           <br />A
-          初心者の方ほどすんなりセミナー内容を理解しやすいので、最短ルートでFXのコツをつかむこともできます。内容は非常に希少価値の高いものですが、どなたでも理解しながら進んでいただけるように、わかりやすく解説いたしますA
           開催期間中はいつでも見ることができますし、繰り返し見ることも可能です。視聴期間終了後は視聴不可となりますのでご注意ください。
           。
         </p>
@@ -88,9 +87,9 @@ function Question() {
           <span className="underline">
             Q8、登録した後で追加料金や勧誘が来たりしませんか？
           </span>
-          <br />
+          <br />A
           追加料金や強引な勧誘などは一切ございませんのでご安心ください。
-          ※無料講座受講後、弊中心からメールでお得なご案内等をお送りすることはございますが、不要な場合はワンクリックで配信を停止いただけます。
+          ※無料講座受講後、弊中心からメールでお得なご案内等をお送りすることはございますが、不要な場合はワンクリックで配信停⽌することも可能です。
         </p>
       </Content>
       <Footer>
